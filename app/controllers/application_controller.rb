@@ -25,7 +25,7 @@ class ApplicationController < Sinatra::Base
     if session[:user_id] = @user.id
       binding.pry
     erb :account
-  end
+    end
   #  <!-- if # session[:user_id] exists
      # show account page
   #  else
