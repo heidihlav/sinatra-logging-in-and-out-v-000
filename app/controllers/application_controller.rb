@@ -22,9 +22,10 @@ class ApplicationController < Sinatra::Base
 
 
   get '/account' do
-    if session[:user_id] = @user.id
-      binding.pry
-    erb :account
+    if session[:user_id] != nil
+      erb :account
+    else
+      erb :error
     end
   #  <!-- if # session[:user_id] exists
      # show account page
