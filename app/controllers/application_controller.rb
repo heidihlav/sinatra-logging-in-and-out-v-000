@@ -27,10 +27,6 @@ class ApplicationController < Sinatra::Base
     else
       erb :error
     end
-  #  <!-- if # session[:user_id] exists
-     # show account page
-  #  else
-     # show error -->
   end
 
   get '/logout' do
